@@ -4,7 +4,7 @@ import ProductItem from "./ProductItem";
 
 function ProductList() {
   return (
-    <div className="flex flex-wrap justify-between items-center w-full wy-10">
+    <div className="flex flex-wrap gap-4 items-center w-full wy-10">
       {DATA.map((item) => {
         return <ProductItem key={item.name} product={item} />;
       })}

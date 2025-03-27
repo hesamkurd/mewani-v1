@@ -22,8 +22,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  ads,
 }: Readonly<{
   children: React.ReactNode;
+  ads: React.ReactNode;
 }>) {
   return (
     <html lang="en">
@@ -45,6 +47,7 @@ export default function RootLayout({
             </div>
           </header>
           <div className={`w-[90%] mx-auto mt-28`}>{children}</div>
+          {/* <div className="my-10 mx-auto flex justify-center">{ads}</div> */}
         </main>
       </body>
     </html>
