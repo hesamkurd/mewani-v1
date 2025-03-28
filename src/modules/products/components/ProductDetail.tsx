@@ -4,8 +4,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
 import { Button } from "@/components/ui";
 import Link from "next/link";
+import { ProductsWithImages } from "@/types";
 
-export default function ProductDetail(product: any) {
+export default function ProductDetail(product: ProductsWithImages) {
   return (
     <div className="container mx-auto py-10">
       <Card className="max-w-3xl mx-auto">
